@@ -13,4 +13,4 @@
   **Solution**: You probably have not installed the Magento application yet, install it with `setup:install`.
 
 * **Problem**: When trying to enable a module which is being symlinked into your repo from somewhere outside your Magento repo, you get an error: `Unknown module(s): '<Vendor_Module>'`.  
-  **Solution**: ???
+  **Solution**: If you are using a VM for development, check if your module lives in a directory which is not accessible to your VM. Magento will not be able to reach your code if the VM cannot reach it either.
